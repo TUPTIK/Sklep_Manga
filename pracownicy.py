@@ -10,62 +10,11 @@ class Osoba:
         print(f"Rok: {self.rok}")
 
 
-class Pracownik(Osoba):
-    def __init__(self, imie, nazwisko, rok, zarobek, doswiadczenie):
-        super().__init__(imie, nazwisko, rok)
-        self.zarobek = zarobek
-        self.doswiadczenie = doswiadczenie
-
-    def inf(self):
-        super().inf()
-        print(f"Zarobek: {self.zarobek}")
-        print(f"Doświadczenie: {self.doswiadczenie}")
-
     def zmien_wyplate(self, nowa_wyplata):
-        self.zarobek = nowa_wyplata
+            self.zarobek = nowa_wyplata
 
     def zmien_doswiadczenie(self, nowe_doswiadczenie):
-        self.doswiadczenie = nowe_doswiadczenie
-
-
-class Kasjer(Pracownik):
-    def __init__(self, imie, nazwisko, rok, zarobek, doswiadczenie):
-        super().__init__(imie, nazwisko, rok, zarobek, doswiadczenie)
-
-    def czynnosc(self):
-        print("Obsługa przy kasie ")
-
-
-class Sprzataczka(Pracownik):
-    def __init__(self, imie, nazwisko, rok, zarobek, doswiadczenie):
-        super().__init__(imie, nazwisko, rok, zarobek, doswiadczenie)
-
-    def czynnosc(self):
-        print("Sprząta")
-
-
-class Dostawca(Pracownik):
-    def __init__(self, imie, nazwisko, rok, zarobek, doswiadczenie):
-        super().__init__(imie, nazwisko, rok, zarobek, doswiadczenie)
-
-    def czynnosc(self):
-        print("Dostarcza towar")
-
-
-class Informatyk(Pracownik):
-    def __init__(self, imie, nazwisko, rok, zarobek, doswiadczenie):
-        super().__init__(imie, nazwisko, rok, zarobek, doswiadczenie)
-
-    def czynnosc(self):
-        print("Zajmuje się IT")
-
-
-class Menager(Pracownik):
-    def __init__(self, imie, nazwisko, rok, zarobek, doswiadczenie):
-        super().__init__(imie, nazwisko, rok, zarobek, doswiadczenie)
-
-    def czynnosc(self):
-        print("Zarządza personelem")
+            self.doswiadczenie = nowe_doswiadczenie
 
 
 # class Osoba:
