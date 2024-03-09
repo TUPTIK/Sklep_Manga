@@ -41,7 +41,7 @@ class Sprzataczka(Pracownik):
         super().__init__(imie, nazwisko, rok, zarobek, doswiadczenie)
 
     def czynnosc(self):
-        print("Sprząta pomieszczenia")
+        print("Sprząta")
 
 
 class Dostawca(Pracownik):
