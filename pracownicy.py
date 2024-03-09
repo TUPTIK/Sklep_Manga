@@ -17,6 +17,54 @@ class Osoba:
             self.doswiadczenie = nowe_doswiadczenie
 
 
+
+class Kasjer:
+    def __init__(self, osoba, zarobek, doswiadczenie):
+        self.pracownik = Pracownik(osoba, zarobek, doswiadczenie)
+
+    def czynnosc(self):
+        print("Obsługuje klientów na kasie")
+
+
+class Sprzataczka:
+    def __init__(self, osoba, zarobek, doswiadczenie):
+        self.pracownik = Pracownik(osoba, zarobek, doswiadczenie)
+
+    def czynnosc(self):
+        print("Sprząta")
+
+
+class Dostawca:
+    def __init__(self, osoba, zarobek, doswiadczenie):
+        self.pracownik = Pracownik(osoba, zarobek, doswiadczenie)
+
+    def czynnosc(self):
+        print("Dostarcza towar")
+
+
+class Informatyk:
+    def __init__(self, osoba, zarobek, doswiadczenie):
+        self.pracownik = Pracownik(osoba, zarobek, doswiadczenie)
+
+    def czynnosc(self):
+        print("Zajmuje się IT")
+
+
+class Menager:
+    def __init__(self, osoba, zarobek, doswiadczenie):
+        self.pracownik = Pracownik(osoba, zarobek, doswiadczenie)
+
+    def czynnosc(self):
+        print("Zarządza personelem")
+
+
+# Przykład użycia:
+osoba = Osoba("Joe", "Worker", 1980)
+kasjer = Kasjer(osoba, 2000, 3)
+kasjer.pracownik.inf()
+kasjer.czynnosc()
+
+
 # class Osoba:
 #     def __init__(self, imie, nazwisko, rok):
 #         self.imie = imie
