@@ -10,12 +10,22 @@ class Osoba:
         print(f"Rok: {self.rok}")
 
 
+class Pracownik:
+    def __init__(self, osoba, zarobek, doswiadczenie):
+        self.osoba = osoba
+        self.zarobek = zarobek
+        self.doswiadczenie = doswiadczenie
+
+    def inf(self):
+        self.osoba.inf()
+        print(f"Zarobek: {self.zarobek}")
+        print(f"Doświadczenie: {self.doswiadczenie}")
+
     def zmien_wyplate(self, nowa_wyplata):
-            self.zarobek = nowa_wyplata
+        self.zarobek = nowa_wyplata
 
     def zmien_doswiadczenie(self, nowe_doswiadczenie):
-            self.doswiadczenie = nowe_doswiadczenie
-
+        self.doswiadczenie = nowe_doswiadczenie
 
 
 class Kasjer:
@@ -58,7 +68,7 @@ class Menager:
         print("Zarządza personelem")
 
 
-# Przykład użycia:
+#===================================================================
 osoba = Osoba("Joe", "Worker", 1980)
 kasjer = Kasjer(osoba, 2000, 3)
 kasjer.pracownik.inf()
