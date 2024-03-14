@@ -9,27 +9,37 @@ class Produkt:
 
 
 class Manga(Produkt):
-    def __init__(self, rozmiar, waga, nazwa, numer_wydania, fabula):
+    def __init__(self, rozmiar, waga, nazwa, numer_wydania, fabula, cena):
         super.__init__(rozmiar, waga)
         self.nazwa = nazwa
         self.numer = numer_wydania
         self.fabula = fabula
+        self.cena = cena
+    
+    def nowa_cena(self, nowa_cena):
+        self.cena = nowa_cena
 
     def inf(self):
         super(Manga, self).inf()
         print(f"Nazwa: {self.nazwa}")
         print(f"Numer wydania: {self.numer}")
         print(f"Fabula: {self.fabula}")
+        print(f'Cena: {self.cena}')
 
 
 class Figurki(Produkt):
-    def __init__(self, rozmiar, waga, wyglad):
+    def __init__(self, rozmiar, waga, wyglad, cena):
         super.__init__(rozmiar, waga)
         self.wyglad = wyglad
+        self.cena = cena
+
+    def nowa_cena(self, nowa_cena):
+        self.cena = nowa_cena
 
     def inf(self):
         super(Figurki, self).inf()
         print(f"Wyglad: {self.wyglad}")
+        print(f'Cena: {self.cena}')
 
 
 class Poduszka(Produkt):
