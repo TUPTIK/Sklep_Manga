@@ -37,6 +37,7 @@ class Magazyn:
         self.sprzedarz.append(self.magazyn[a])
         self.magazyn.remove(self.magazyn[a])
 
-    def ocena(self, l):
-        self.statystyki.dodaj_zakup()
+    def zakup(self, x):
+        self.sprzedarz.remove(x)
+        self.statystyki.dodaj_zakup('cos', self.sprzedarz[x].cena)
         
